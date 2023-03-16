@@ -29,3 +29,9 @@ select salary from EmployeePayroll where name='Abhi'
 
 -- Retrieve salary for particular employee who join in particular date using getdate()
 select salary from  EmployeePayroll where start_Date between '2020-01-12' and getdate()
+
+--UC6 Alter Table
+alter table EmployeePayroll add gender char(1)
+-- update row
+update EmployeePayroll set gender='M' where name='Abhi' or name='Arya'
+update EmployeePayroll set gender ='F' where id in (2,4)
