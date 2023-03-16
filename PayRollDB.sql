@@ -11,7 +11,7 @@ salary money not null,
 start_Date date not null
 )
 
-select * from EmployeePayroll
+
 
 --UC-3 Insert values in Table
 Insert into EmployeePayroll values
@@ -19,3 +19,6 @@ Insert into EmployeePayroll values
 ('Swayam',25000,'2020-02-18'),
 ('Arya',10000,'2022-11-13'),
 ('Gitesh',30000,'2019-06-09')
+
+--UC-4 Retrieve All data--
+select * from EmployeePayroll
